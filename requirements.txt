@@ -1,0 +1,17 @@
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+jupyter
+notebook
+scikit-learn
+langchain
+chromadb
+faiss-cpu
+sentence-transformers
+transformers
+gradio
+streamlit
+tqdm
+python-dotenv

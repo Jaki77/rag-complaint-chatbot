@@ -1,0 +1,35 @@
+# Data
+data/
+*.csv
+*.parquet
+*.feather
+
+# Plots and reports
+reports/
+*.pdf
+*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Vector databases
+vector_store/
+*.faiss
+chroma.sqlite3
+
+# Environment
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
