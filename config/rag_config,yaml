@@ -1,0 +1,49 @@
+# RAG Pipeline Configuration
+rag:
+  # Retrieval Settings
+  retriever:
+    top_k: 5
+    similarity_threshold: 0.6
+    enable_reranking: false
+    reranker_model: "BAAI/bge-reranker-base"
+    
+  # Chunk Processing
+  chunking:
+    max_chunk_length: 500
+    overlap: 50
+    
+  # LLM Settings
+  generator:
+    model_name: "mistralai/Mistral-7B-Instruct-v0.2"
+    # Alternatives: "meta-llama/Llama-2-7b-chat-hf", "microsoft/phi-2"
+    temperature: 0.3
+    max_new_tokens: 512
+    top_p: 0.95
+    repetition_penalty: 1.1
+    
+  # Prompt Templates
+  prompts:
+    system_prompt: |
+      You are a helpful financial analyst assistant for CreditTrust Financial.
+      Your task is to answer questions about customer complaints using ONLY the provided context.
+      If the context doesn't contain relevant information, say "I don't have enough information."
+      Always cite specific complaint details when available.
+      
+    analysis_template: |
+      SYSTEM: {system_prompt}
+      
+      CONTEXT:
+      {context}
+      
+      QUESTION: {question}
+      
+      ANSWER: 
+      
+    summarization_template: |
+      Summarize the main issues in these customer complaints.
+      Focus on: problem patterns, severity, frequency, and potential solutions.
+      
+      Complaints:
+      {complaints}
+      
+      Summary:
