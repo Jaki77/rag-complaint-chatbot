@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "What are the main complaints about credit card fees?",
+    "category": "credit_card",
+    "expected_aspects": ["fee amounts", "transparency", "justification"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 2,
+    "question": "How do customers feel about money transfer services?",
+    "category": "money_transfer",
+    "expected_aspects": ["speed", "reliability", "cost", "errors"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "What issues are customers having with personal loan applications?",
+    "category": "personal_loan",
+    "expected_aspects": ["approval process", "documentation", "time", "communication"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "question": "Compare complaints between savings accounts and credit cards.",
+    "category": "comparative",
+    "expected_aspects": ["fee comparison", "service issues", "customer satisfaction"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 5,
+    "question": "What are the most common billing disputes?",
+    "category": "billing",
+    "expected_aspects": ["incorrect charges", "dispute process", "resolution time"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 6,
+    "question": "How have complaints about interest rates changed over time?",
+    "category": "trends",
+    "expected_aspects": ["temporal patterns", "rate changes", "customer reactions"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 7,
+    "question": "What problems do customers report with mobile banking apps?",
+    "category": "technology",
+    "expected_aspects": ["app crashes", "UI issues", "functionality", "security"],
+    "difficulty": "medium"
+  },
+  {
+    "id": 8,
+    "question": "Summarize the key issues across all financial products.",
+    "category": "summary",
+    "expected_aspects": ["cross-product patterns", "severity", "frequency"],
+    "difficulty": "hard"
+  },
+  {
+    "id": 9,
+    "question": "What specific issues are mentioned about overdraft fees?",
+    "category": "specific_issue",
+    "expected_aspects": ["fee amounts", "notification", "avoidance", "disputes"],
+    "difficulty": "easy"
+  },
+  {
+    "id": 10,
+    "question": "Are there geographic patterns in complaints?",
+    "category": "geographic",
+    "expected_aspects": ["state variations", "regional issues", "concentration"],
+    "difficulty": "hard"
+  }
+]
