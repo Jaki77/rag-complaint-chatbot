@@ -1,0 +1,42 @@
+# UI Configuration
+ui:
+  framework: "gradio"  
+  title: "CreditTrust Complaint Analysis Assistant"
+  description: |
+    Ask questions about customer complaints across Credit Cards, Personal Loans, 
+    Savings Accounts, and Money Transfers. Get AI-powered insights with source citations.
+  
+  # Layout Settings
+  layout:
+    theme: "soft"  # "soft", "default", "dark"
+    primary_color: "#1e40af"  # Blue
+    secondary_color: "#0ea5e9"  # Light blue
+    accent_color: "#10b981"  # Green
+    
+  # Features
+  features:
+    enable_streaming: true
+    enable_history: true
+    max_history: 10
+    enable_export: true
+    enable_feedback: true
+    
+  # Display Settings
+  display:
+    max_answer_length: 1000
+    max_sources_display: 5
+    show_confidence: true
+    show_processing_time: true
+    animate_responses: true
+    
+  # Filter Options
+  filters:
+    enabled: true
+    products: ["Credit Card", "Personal Loan", "Savings Account", "Money Transfer"]
+    date_range: true
+    issue_types: true
+    
+  # Security
+  security:
+    rate_limit: 10  # requests per minute
+    require_api_key: false
